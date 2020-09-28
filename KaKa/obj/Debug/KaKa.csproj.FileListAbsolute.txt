@@ -1,0 +1,9 @@
+D:\Repos\KaKa\KaKa\bin\Debug\KaKa.exe.config
+D:\Repos\KaKa\KaKa\bin\Debug\KaKa.exe
+D:\Repos\KaKa\KaKa\bin\Debug\KaKa.pdb
+D:\Repos\KaKa\KaKa\obj\Debug\KaKa.csprojAssemblyReference.cache
+D:\Repos\KaKa\KaKa\obj\Debug\KaKa.KaKaForm.resources
+D:\Repos\KaKa\KaKa\obj\Debug\KaKa.Properties.Resources.resources
+D:\Repos\KaKa\KaKa\obj\Debug\KaKa.csproj.GenerateResource.cache
+D:\Repos\KaKa\KaKa\obj\Debug\KaKa.exe
+D:\Repos\KaKa\KaKa\obj\Debug\KaKa.pdb
