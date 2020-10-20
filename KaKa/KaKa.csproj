@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C.Designer.cs">
+      <DependentUpon>C.cs</DependentUpon>
+    </Compile>
     <Compile Include="GV.cs" />
     <Compile Include="KaKaForm.cs">
       <SubType>Form</SubType>
@@ -53,16 +59,34 @@
     <Compile Include="KaKaForm.Designer.cs">
       <DependentUpon>KaKaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="L.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L.Designer.cs">
+      <DependentUpon>L.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R.Designer.cs">
+      <DependentUpon>R.cs</DependentUpon>
+    </Compile>
     <Compile Include="SIZE.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SIZE.Designer.cs">
       <DependentUpon>SIZE.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="C.resx">
+      <DependentUpon>C.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KaKaForm.resx">
       <DependentUpon>KaKaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L.resx">
+      <DependentUpon>L.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +97,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="R.resx">
+      <DependentUpon>R.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SIZE.resx">
       <DependentUpon>SIZE.cs</DependentUpon>
     </EmbeddedResource>
