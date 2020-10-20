@@ -44,9 +44,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 87);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 13);
+            this.label4.Size = new System.Drawing.Size(112, 13);
             this.label4.TabIndex = 26;
-            this.label4.Text = "Ёмкость (КФ)";
+            this.label4.Text = "Индуктивность (КГн)";
             // 
             // m_zl
             // 
@@ -95,9 +95,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Конденсатор C";
+            this.label1.Text = "Индуктивность L";
             // 
             // m_nextl
             // 
