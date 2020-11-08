@@ -46,5 +46,12 @@ namespace KaKa
                 il.Dispose();
             }
         }
+
+        private void ID_RED_Click(object sender, EventArgs e)
+        {
+            RED red = new RED();
+            red.ShowDialog(this);
+            red.Dispose();
+        }
     }
 }

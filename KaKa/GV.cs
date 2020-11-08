@@ -12,6 +12,8 @@ namespace KaKa
 
         public static int nv, nr, nc, nl;
 
+        public static int k;
+
         public static int[,] in_r = new int[MR + 1, 2];
         public static float[] z_r = new float[MR + 1];
 
