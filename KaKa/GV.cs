@@ -8,6 +8,8 @@ namespace KaKa
 {
     class GV
     {
+        public static String filename;
+
         public static int M = 100, MR = 50, MF = 20;
 
         public static int nv, nr, nc, nl;
@@ -31,7 +33,6 @@ namespace KaKa
         //...
         //public static float[] f = new float[MF + 1];
         //...
-        //public static String filename;
         //public static bool flag = false;
 
     }
