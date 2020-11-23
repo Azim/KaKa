@@ -25,13 +25,14 @@ namespace KaKa
         public static int[,] in_l = new int[MR + 1, 2];
         public static float[] z_l = new float[MR + 1];
 
+        public static float[] f = new float[MF + 1];
+        public static int nf;
+
+        public static int lp, lm, kp, km;
+
         //
         //public static int nv, n, nr, nf, lp, lm, kp, k;
-        //public static int[,] in_r = new int[MR + 1, 2];
         //...
-        //public static float[] z_r = new float[MR + 1];
-        //...
-        //public static float[] f = new float[MF + 1];
         //...
         //public static bool flag = false;
 
