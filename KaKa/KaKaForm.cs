@@ -56,6 +56,7 @@ namespace KaKa
             F f = new F();
             f.ShowDialog(this);
             f.Dispose();
+
             IO io = new IO();
             io.ShowDialog(this);
             io.Dispose();
@@ -104,6 +105,30 @@ namespace KaKa
             IO io = new IO();
             io.ShowDialog(this);
             io.Dispose();
+        }
+
+        private void ID_PRIV_Click(object sender, EventArgs e)
+        {
+            GV.flag = false;
+        }
+
+        private void ID_SYS_Click(object sender, EventArgs e)
+        {
+            GV.flag = true;
+        }
+
+        private void ID_INTERNET_Click(object sender, EventArgs e)
+        {
+            if (!GV.flag)
+            {
+                INT cint = new INT();
+                cint.Show(this);
+            }
+            else
+            {
+                //убрал строку iexplore.exe для запуска браузера, установленного пользователем по умолчанию 
+                System.Diagnostics.Process.Start("http://azim.icu/MF/Int3d.htm"); 
+            }
         }
     }
 }

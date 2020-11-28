@@ -30,11 +30,13 @@ namespace KaKa
 
         public static int lp, lm, kp, km;
 
+        public static bool flag = false;
+
+
         //
         //public static int nv, n, nr, nf, lp, lm, kp, k;
         //...
         //...
-        //public static bool flag = false;
 
     }
 }
