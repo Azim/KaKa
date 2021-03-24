@@ -71,7 +71,6 @@ namespace KaKa
             }
 
 
-            //...
             fout.Close();
         }
 
@@ -113,7 +112,6 @@ namespace KaKa
                 GV.z_l[i] = Single.Parse(s[2]);
             }
 
-            //...
             fin.Close();
         }
 

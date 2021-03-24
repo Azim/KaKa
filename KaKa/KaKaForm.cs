@@ -60,8 +60,6 @@ namespace KaKa
             IO io = new IO();
             io.ShowDialog(this);
             io.Dispose();
-
-
         }
 
         private void ID_RED_Click(object sender, EventArgs e)
