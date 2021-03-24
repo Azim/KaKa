@@ -128,5 +128,10 @@ namespace KaKa
                 System.Diagnostics.Process.Start("http://azim.icu/MF/Int3d.htm"); 
             }
         }
+
+        private void ID_CALC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
