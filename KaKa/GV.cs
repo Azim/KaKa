@@ -15,6 +15,7 @@ namespace KaKa
         public static int lp, lm, kp, km;
         public static int k;
 
+
         public static int[,] in_r = new int[MR + 1, 2];
         public static int[,] in_c = new int[MC + 1, 2];
         public static int[,] in_l = new int[ML + 1, 2];
