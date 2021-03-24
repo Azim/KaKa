@@ -15,7 +15,6 @@ namespace KaKa
         public static int lp, lm, kp, km;
         public static int k;
 
-
         public static int[,] in_r = new int[MR + 1, 2];
         public static int[,] in_c = new int[MC + 1, 2];
         public static int[,] in_l = new int[ML + 1, 2];
@@ -28,6 +27,14 @@ namespace KaKa
         public static int nf;
 
         public static Complex s;
+        public static Complex[,] w = new Complex[M + 1, M + 1];
+
+        public static float[] kum = new float[MF + 1];
+        public static float[] kua = new float[MF + 1];
+        public static float[] rim = new float[MF + 1];
+        public static float[] ria = new float[MF + 1];
+        public static float[] rom = new float[MF + 1];
+        public static float[] roa = new float[MF + 1];
 
         public static String filename;
         public static bool flag = false;
