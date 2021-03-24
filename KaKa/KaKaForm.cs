@@ -60,6 +60,8 @@ namespace KaKa
             IO io = new IO();
             io.ShowDialog(this);
             io.Dispose();
+
+            ID_CALC_Click(sender, e);
         }
 
         private void ID_RED_Click(object sender, EventArgs e)
@@ -131,7 +133,21 @@ namespace KaKa
 
         private void ID_CALC_Click(object sender, EventArgs e)
         {
-
+            for(int i = 0; i <= GV.M; i++) 
+                for(int j = 0; j <= GV.M; j++)
+                {
+                    GV.w[i, j] = new Complex(0, 0);
+                }
+            GV.n = GV.nv;
+            for(int kf = 1; kf <= GV.nf; kf++)
+            {
+                GV.s = new Complex(0.0, 2 * Math.PI * GV.f[kf]);
+                MatrixCreator.form_d(ref GV.in_r, ref GV.z_r, GV.nr, 'R');
+                MatrixCreator.form_d(ref GV.in_c, ref GV.z_c, GV.nc, 'C');
+                MatrixCreator.form_d(ref GV.in_l, ref GV.z_l, GV.nl, 'L');
+                //..
+                MatrixCreator.form_s();
+            }
         }
     }
 }
