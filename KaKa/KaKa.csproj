@@ -105,6 +105,7 @@
     <Compile Include="RED.Designer.cs">
       <DependentUpon>RED.cs</DependentUpon>
     </Compile>
+    <Compile Include="SF.cs" />
     <Compile Include="SIZE.cs">
       <SubType>Form</SubType>
     </Compile>

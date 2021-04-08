@@ -145,9 +145,63 @@ namespace KaKa
                 MatrixCreator.form_d(ref GV.in_r, ref GV.z_r, GV.nr, 'R');
                 MatrixCreator.form_d(ref GV.in_c, ref GV.z_c, GV.nc, 'C');
                 MatrixCreator.form_d(ref GV.in_l, ref GV.z_l, GV.nl, 'L');
-                //..
+                MatrixCreator.form_ei();
+                MatrixCreator.form_eu();
+                MatrixCreator.form_ou();
+                MatrixCreator.form_tri();
                 MatrixCreator.form_s();
+
+                if ((GV.lp == 1) && (GV.lm == 0) && (GV.kp == 2) && (GV.km == 0))
+                {
+                    SF.st();
+                    SF.sf1(kf);
+                }
+                else
+                {
+                    SF.gauss_c();
+                    SF.sf2(kf);
+                }
+
             }
+            
+            string str = "";
+            str = "Результаты моделирования ";
+            textBox1.AppendText(str + "\r\n");
+            if ((GV.lp == 1) && (GV.lm == 0) && (GV.kp == 2) && (GV.km == 0))
+            {
+                str = "    f кГц \t kum \t kua \t rim \t ria \t rom \t roa";
+                textBox1.AppendText(str + "\r\n");
+                for (int kf = 1; kf <= GV.nf; kf++)
+                {
+                    str = String.Format("{0,12:F2}{1,12:E2}{2,12:F2}" +
+                    "{3,12:E2}{4,12:F2}{5,12:E2}{6,12:F2}",
+                    GV.f[kf], GV.kum[kf], GV.kua[kf], GV.rim[kf],
+                    GV.ria[kf], GV.rom[kf], GV.roa[kf]);
+                    textBox1.AppendText(str + "\r\n");
+                }
+            }
+            else
+            {
+                str = "    f кГц \t kum \t kua \t rim \t ria";
+                textBox1.AppendText(str + "\r\n");
+                for (int kf = 1; kf <= GV.nf; kf++)
+                {
+                    str = String.Format("{0,12:F2}{1,12:E2}{2,12:F2}" +
+                    "{3,12:E2}{4,12:F2}",
+                    GV.f[kf], GV.kum[kf], GV.kua[kf], GV.rim[kf], GV.ria[kf]);
+                    textBox1.AppendText(str + "\r\n");
+                }
+            }
+            
+            // Вывод результатов расчета в файл
+            DialogResult res = MessageBox.Show("Выводить результаты в файл?",
+            "Вывод результатов", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+                SF.write_out();
+            MessageBox.Show("Выберите в меню дальнейший режим работы",
+            "Режим работы", MessageBoxButtons.OK);
         }
+
+
     }
 }

@@ -37,6 +37,7 @@ namespace KaKa
                 }
         }
 
+        /*
         public static void form_eu()
         {
             for(int keu = 1; keu <= GV.neu; keu++)
@@ -61,15 +62,15 @@ namespace KaKa
                 }
             }
             GV.n += GV.neu;
-        }
+        }*/
 
-        public static void form_eu_complex()
+        public static void form_eu()
         {
             Complex ms = new Complex(0, 0);
             int i, j, g;
             for(int keu = 1; keu<= GV.neu; keu++)
             {
-                ms = GV.z_eu_complex[keu, 0] * (1 + GV.s * GV.z_eu_complex[keu, 1]) / (1 + GV.s * GV.z_eu_complex[keu, 2]);
+                ms = GV.z_eu[keu, 0] * (1 + GV.s * GV.z_eu[keu, 1]) / (1 + GV.s * GV.z_eu[keu, 2]);
                 i = GV.n + keu;
                 for(int m = 0; m <= 3; m++)
                 {
@@ -83,7 +84,7 @@ namespace KaKa
                     else
                     {
                         g = 5 - 2 * m;
-                        GV.w[i, j] -= g; //*ms; //?
+                        GV.w[i, j] -= g;
                         GV.w[j, i] += g;
                     }
                 }
@@ -197,7 +198,7 @@ namespace KaKa
         }
 
 
-        public static void form_s() //TODO concern
+        public static void form_s()
         {
             for (int i = 1; i <= GV.M; i++)
                 GV.w[i, 0] = new Complex(0,0);
@@ -206,5 +207,6 @@ namespace KaKa
             if (GV.lm != 0)
                 GV.w[GV.lm, 0] = new Complex(1,0);
         }
+
     }
 }
