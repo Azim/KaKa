@@ -100,7 +100,6 @@ namespace KaKa
             {
                 i1 = GV.n + kei;
                 i2 = i1 + GV.nei;
-                //TODO is it true?
                 GV.w[i2, i1] = new Complex(GV.z_ei[kei], 0); 
                 for(int m = 0; m <= 3; m++)
                 {

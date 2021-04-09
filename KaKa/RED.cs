@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -118,17 +119,20 @@ namespace KaKa
                 case 0:
                     GV.in_r[GV.k, 0] = Int32.Parse(m_np2.Text);
                     GV.in_r[GV.k, 1] = Int32.Parse(m_nm2.Text);
-                    GV.z_r[GV.k] = Single.Parse(m_z1.Text);
+                    //GV.z_r[GV.k] = Single.Parse(m_z1.Text);
+                    float.TryParse(m_z1.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_r[GV.k]);
                     break;
                 case 1:
                     GV.in_c[GV.k, 0] = Int32.Parse(m_np2.Text);
                     GV.in_c[GV.k, 1] = Int32.Parse(m_nm2.Text);
-                    GV.z_c[GV.k] = Single.Parse(m_z1.Text);
+                    //GV.z_c[GV.k] = Single.Parse(m_z1.Text);
+                    float.TryParse(m_z1.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_c[GV.k]);
                     break;
                 case 2:
                     GV.in_l[GV.k, 0] = Int32.Parse(m_np2.Text);
                     GV.in_l[GV.k, 1] = Int32.Parse(m_nm2.Text);
-                    GV.z_l[GV.k] = Single.Parse(m_z1.Text);
+                    //GV.z_l[GV.k] = Single.Parse(m_z1.Text);
+                    float.TryParse(m_z1.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_l[GV.k]);
                     break;
             }
             OK.Focus();

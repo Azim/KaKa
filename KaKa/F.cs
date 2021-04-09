@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,13 +56,17 @@ namespace KaKa
             switch (m_f)
             {
                 case 0:
-                    GV.f[1] = Single.Parse(IDC_F1.Text);
+                    float.TryParse(IDC_F1.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.f[1]);
                     GV.nf = 1;
                     break;
                 case 1:
-                    fmin = GV.f[1] = Single.Parse(IDC_F1.Text);
-                    fmax = Single.Parse(IDC_F2.Text);
-                    df = Single.Parse(IDC_F3.Text);
+                    //fmin = GV.f[1] = Single.Parse(IDC_F1.Text);
+                    //fmax = Single.Parse(IDC_F2.Text);
+                    //df = Single.Parse(IDC_F3.Text);
+                    float.TryParse(IDC_F1.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.f[1]);
+                    fmin = GV.f[1];
+                    float.TryParse(IDC_F2.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out fmax);
+                    float.TryParse(IDC_F3.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out df);
                     kf = 1;
                     while (GV.f[kf] < fmax)
                     {
@@ -71,9 +76,12 @@ namespace KaKa
                     GV.nf = kf;
                     break;
                 case 2:
-                    GV.f[1] = Single.Parse(IDC_F1.Text);
-                    fmax = Single.Parse(IDC_F2.Text);
-                    kk = Single.Parse(IDC_F3.Text);
+                    //GV.f[1] = Single.Parse(IDC_F1.Text);
+                    //fmax = Single.Parse(IDC_F2.Text);
+                    //kk = Single.Parse(IDC_F3.Text);
+                    float.TryParse(IDC_F1.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.f[1]);
+                    float.TryParse(IDC_F2.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out fmax);
+                    float.TryParse(IDC_F3.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out kk);
                     kf = 1;
                     while (GV.f[kf] < fmax)
                     {

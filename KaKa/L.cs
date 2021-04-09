@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,8 @@ namespace KaKa
             int i = Int32.Parse(m_nextl.Text);
             GV.in_l[i, 0] = Int32.Parse(m_npl.Text);
             GV.in_l[i, 1] = Int32.Parse(m_nml.Text);
-            GV.z_l[i] = Single.Parse(m_zl.Text);
+            //GV.z_l[i] = float.Parse(m_zl.Text);
+            float.TryParse(m_zl.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_l[i]);
             i++;
             m_nextl.Text = i.ToString();
             if (i <= GV.nl)

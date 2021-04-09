@@ -33,10 +33,10 @@
             this.m_nr = new System.Windows.Forms.TextBox();
             this.m_nc = new System.Windows.Forms.TextBox();
             this.m_nl = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.m_nju = new System.Windows.Forms.TextBox();
+            this.m_neu = new System.Windows.Forms.TextBox();
+            this.m_nji = new System.Windows.Forms.TextBox();
+            this.m_nei = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,14 +49,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.m_ntr = new System.Windows.Forms.TextBox();
+            this.m_nou = new System.Windows.Forms.TextBox();
+            this.m_ntu = new System.Windows.Forms.TextBox();
+            this.m_ntb = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.m_ntri = new System.Windows.Forms.TextBox();
+            this.m_noui = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // OK
@@ -102,37 +102,37 @@
             this.m_nl.TabIndex = 4;
             this.m_nl.Text = "0";
             // 
-            // textBox5
+            // m_nju
             // 
-            this.textBox5.Location = new System.Drawing.Point(13, 117);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(43, 20);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "0";
+            this.m_nju.Location = new System.Drawing.Point(13, 117);
+            this.m_nju.Name = "m_nju";
+            this.m_nju.Size = new System.Drawing.Size(43, 20);
+            this.m_nju.TabIndex = 5;
+            this.m_nju.Text = "0";
             // 
-            // textBox6
+            // m_neu
             // 
-            this.textBox6.Location = new System.Drawing.Point(13, 143);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(43, 20);
-            this.textBox6.TabIndex = 6;
-            this.textBox6.Text = "0";
+            this.m_neu.Location = new System.Drawing.Point(13, 143);
+            this.m_neu.Name = "m_neu";
+            this.m_neu.Size = new System.Drawing.Size(43, 20);
+            this.m_neu.TabIndex = 6;
+            this.m_neu.Text = "0";
             // 
-            // textBox7
+            // m_nji
             // 
-            this.textBox7.Location = new System.Drawing.Point(13, 169);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(43, 20);
-            this.textBox7.TabIndex = 7;
-            this.textBox7.Text = "0";
+            this.m_nji.Location = new System.Drawing.Point(13, 169);
+            this.m_nji.Name = "m_nji";
+            this.m_nji.Size = new System.Drawing.Size(43, 20);
+            this.m_nji.TabIndex = 7;
+            this.m_nji.Text = "0";
             // 
-            // textBox8
+            // m_nei
             // 
-            this.textBox8.Location = new System.Drawing.Point(13, 195);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(43, 20);
-            this.textBox8.TabIndex = 8;
-            this.textBox8.Text = "0";
+            this.m_nei.Location = new System.Drawing.Point(13, 195);
+            this.m_nei.Name = "m_nei";
+            this.m_nei.Size = new System.Drawing.Size(43, 20);
+            this.m_nei.TabIndex = 8;
+            this.m_nei.Text = "0";
             // 
             // label1
             // 
@@ -242,37 +242,37 @@
             this.label12.TabIndex = 21;
             this.label12.Text = "Б/п транзисторы";
             // 
-            // textBox9
+            // m_ntr
             // 
-            this.textBox9.Location = new System.Drawing.Point(152, 91);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(43, 20);
-            this.textBox9.TabIndex = 20;
-            this.textBox9.Text = "0";
+            this.m_ntr.Location = new System.Drawing.Point(152, 91);
+            this.m_ntr.Name = "m_ntr";
+            this.m_ntr.Size = new System.Drawing.Size(43, 20);
+            this.m_ntr.TabIndex = 20;
+            this.m_ntr.Text = "0";
             // 
-            // textBox10
+            // m_nou
             // 
-            this.textBox10.Location = new System.Drawing.Point(152, 65);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(43, 20);
-            this.textBox10.TabIndex = 19;
-            this.textBox10.Text = "0";
+            this.m_nou.Location = new System.Drawing.Point(152, 65);
+            this.m_nou.Name = "m_nou";
+            this.m_nou.Size = new System.Drawing.Size(43, 20);
+            this.m_nou.TabIndex = 19;
+            this.m_nou.Text = "0";
             // 
-            // textBox11
+            // m_ntu
             // 
-            this.textBox11.Location = new System.Drawing.Point(152, 39);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(43, 20);
-            this.textBox11.TabIndex = 18;
-            this.textBox11.Text = "0";
+            this.m_ntu.Location = new System.Drawing.Point(152, 39);
+            this.m_ntu.Name = "m_ntu";
+            this.m_ntu.Size = new System.Drawing.Size(43, 20);
+            this.m_ntu.TabIndex = 18;
+            this.m_ntu.Text = "0";
             // 
-            // textBox12
+            // m_ntb
             // 
-            this.textBox12.Location = new System.Drawing.Point(152, 13);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(43, 20);
-            this.textBox12.TabIndex = 17;
-            this.textBox12.Text = "0";
+            this.m_ntb.Location = new System.Drawing.Point(152, 13);
+            this.m_ntb.Name = "m_ntb";
+            this.m_ntb.Size = new System.Drawing.Size(43, 20);
+            this.m_ntb.TabIndex = 17;
+            this.m_ntb.Text = "0";
             // 
             // label13
             // 
@@ -292,21 +292,21 @@
             this.label14.TabIndex = 27;
             this.label14.Text = "Ид. опер. усилители";
             // 
-            // textBox13
+            // m_ntri
             // 
-            this.textBox13.Location = new System.Drawing.Point(152, 143);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(43, 20);
-            this.textBox13.TabIndex = 26;
-            this.textBox13.Text = "0";
+            this.m_ntri.Location = new System.Drawing.Point(152, 143);
+            this.m_ntri.Name = "m_ntri";
+            this.m_ntri.Size = new System.Drawing.Size(43, 20);
+            this.m_ntri.TabIndex = 26;
+            this.m_ntri.Text = "0";
             // 
-            // textBox14
+            // m_noui
             // 
-            this.textBox14.Location = new System.Drawing.Point(152, 117);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(43, 20);
-            this.textBox14.TabIndex = 25;
-            this.textBox14.Text = "0";
+            this.m_noui.Location = new System.Drawing.Point(152, 117);
+            this.m_noui.Name = "m_noui";
+            this.m_noui.Size = new System.Drawing.Size(43, 20);
+            this.m_noui.TabIndex = 25;
+            this.m_noui.Text = "0";
             // 
             // SIZE
             // 
@@ -315,16 +315,16 @@
             this.ClientSize = new System.Drawing.Size(332, 224);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.m_ntri);
+            this.Controls.Add(this.m_noui);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.m_ntr);
+            this.Controls.Add(this.m_nou);
+            this.Controls.Add(this.m_ntu);
+            this.Controls.Add(this.m_ntb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -333,10 +333,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.m_nei);
+            this.Controls.Add(this.m_nji);
+            this.Controls.Add(this.m_neu);
+            this.Controls.Add(this.m_nju);
             this.Controls.Add(this.m_nl);
             this.Controls.Add(this.m_nc);
             this.Controls.Add(this.m_nr);
@@ -356,10 +356,10 @@
         private System.Windows.Forms.TextBox m_nr;
         private System.Windows.Forms.TextBox m_nc;
         private System.Windows.Forms.TextBox m_nl;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox m_nju;
+        private System.Windows.Forms.TextBox m_neu;
+        private System.Windows.Forms.TextBox m_nji;
+        private System.Windows.Forms.TextBox m_nei;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -372,13 +372,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox m_ntr;
+        private System.Windows.Forms.TextBox m_nou;
+        private System.Windows.Forms.TextBox m_ntu;
+        private System.Windows.Forms.TextBox m_ntb;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox m_ntri;
+        private System.Windows.Forms.TextBox m_noui;
     }
 }

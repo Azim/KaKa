@@ -201,7 +201,5 @@ namespace KaKa
             MessageBox.Show("Выберите в меню дальнейший режим работы",
             "Режим работы", MessageBoxButtons.OK);
         }
-
-
     }
 }
