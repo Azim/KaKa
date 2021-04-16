@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace KaKa
+{
+    public partial class EU : Form
+    {
+        public EU()
+        {
+            InitializeComponent();
+        }
+
+        private void IDC_NEXTR_BUTTON_Click(object sender, EventArgs e)
+        {
+            int i = Int32.Parse(m_nexteu.Text);
+            GV.in_eu[i, 0] = Int32.Parse(m_npeu1.Text);
+            GV.in_eu[i, 1] = Int32.Parse(m_nmeu1.Text);
+            GV.in_eu[i, 2] = Int32.Parse(m_npeu2.Text);
+            GV.in_eu[i, 3] = Int32.Parse(m_nmeu2.Text);
+
+            GV.z_eu[i, 0] = Int32.Parse(m_zy0.Text);
+            GV.z_eu[i, 1] = Int32.Parse(m_zt1.Text);
+            GV.z_eu[i, 2] = Int32.Parse(m_zt2.Text);
+
+            i++;
+            m_nexteu.Text = i.ToString();
+            if (i <= GV.nr)
+            {
+                m_npeu1.Text = "0";
+                m_nmeu1.Text = "0";
+                m_npeu2.Text = "0";
+                m_nmeu2.Text = "0";
+                m_zy0.Text = "0";
+                m_zt1.Text = "0";
+                m_zt2.Text = "0";
+                m_npeu1.Focus();
+            }
+            else
+            {
+                this.Close();
+            }
+        }
+    }
+}

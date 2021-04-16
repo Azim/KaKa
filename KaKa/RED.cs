@@ -18,9 +18,9 @@ namespace KaKa
             InitializeComponent();
         }
 
-        private void m_redlst_DoubleClick(object sender, EventArgs e)
+        private void m_redlst_DoubleClick(object sender, EventArgs e)//TODO add other components
         {
-            String i1, i2, i3, i4, i5, i6, i7, i8, i9;
+            String i1, i2, i3;//, i4, i5, i6, i7, i8, i9;
             //Начальная установка
             m_np1.Show();
             m_nm1.Show();
@@ -53,7 +53,7 @@ namespace KaKa
             m_z5.Text = "";
             m_z6.Text = "";
             //Выбор типа компонента из списка и настройка панели
-            int idx = m_redlst.SelectedIndex;
+            int idx = m_redlst.SelectedIndex;//TODO add other components
             switch (idx)
             {
                 case 0:
@@ -81,10 +81,10 @@ namespace KaKa
                     IDC_Z6_STATIC.Hide();
                     m_n.Focus();
                     break;
-            }
+            }//TODO add other components
         }
 
-        private void IDC_OUT_BUTTON_Click(object sender, EventArgs e)
+        private void IDC_OUT_BUTTON_Click(object sender, EventArgs e) //TODO add other components
         {
             int idx = m_redlst.SelectedIndex;
             GV.k = Int32.Parse(m_n.Text);
@@ -111,7 +111,7 @@ namespace KaKa
 
         }
 
-        private void IDC_IN_BUTTON_Click(object sender, EventArgs e)
+        private void IDC_IN_BUTTON_Click(object sender, EventArgs e)  //TODO add other components
         {
             int idx = m_redlst.SelectedIndex;
             switch (idx)

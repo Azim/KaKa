@@ -53,6 +53,24 @@
       <DependentUpon>C.cs</DependentUpon>
     </Compile>
     <Compile Include="Complex.cs" />
+    <Compile Include="OU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OU.Designer.cs">
+      <DependentUpon>OU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TRI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRI.Designer.cs">
+      <DependentUpon>TRI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EI.Designer.cs">
+      <DependentUpon>EI.cs</DependentUpon>
+    </Compile>
     <Compile Include="F.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +111,12 @@
     <Compile Include="MatrixCreator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EU.Designer.cs">
+      <DependentUpon>EU.cs</DependentUpon>
+    </Compile>
     <Compile Include="R.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +138,15 @@
     </Compile>
     <EmbeddedResource Include="C.resx">
       <DependentUpon>C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OU.resx">
+      <DependentUpon>OU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRI.resx">
+      <DependentUpon>TRI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EI.resx">
+      <DependentUpon>EI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F.resx">
       <DependentUpon>F.cs</DependentUpon>
@@ -142,6 +175,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EU.resx">
+      <DependentUpon>EU.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="R.resx">
       <DependentUpon>R.cs</DependentUpon>
     </EmbeddedResource>

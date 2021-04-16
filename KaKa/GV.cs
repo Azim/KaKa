@@ -19,19 +19,17 @@ namespace KaKa
         //confusing part
         public static int neu, nei, ntri, nou, n;
 
-        public static int[,] in_eu = new int[neu + 1, 4];//TODO in after neu is initialized
+        public static int[,] in_eu = new int[neu + 1, 4];
         public static int[,] z_eu = new int[neu + 1, 3];
-        //public static int[,] z_eu_complex = new int[neu + 1,4];
 
         public static int[,] in_ei = new int[nei + 1, 4];
         public static int[] z_ei = new int[nei + 1];
 
-        public static int[,] in_tri = new int[ntri + 1, 4];//TODO
+        public static int[,] in_tri = new int[ntri + 1, 4];
         public static int[] z_tri = new int[ntri + 1];
 
-        public static int[,] in_ou = new int[nou + 1, 5];
+        public static int[,] in_ou = new int[nou + 1, 5];//TODO proper init
         public static int[,] z_ou = new int[nou + 1, 4];
-
 
 
 

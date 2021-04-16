@@ -45,6 +45,30 @@ namespace KaKa
                 il.ShowDialog(this);
                 il.Dispose();
             }
+            if (GV.neu > 0)
+            {
+                EU eu = new EU();
+                eu.ShowDialog(this);
+                eu.Dispose();
+            }
+            if (GV.nei > 0)
+            {
+                EI ei = new EI();
+                ei.ShowDialog(this);
+                ei.Dispose();
+            }
+            if (GV.ntri > 0)
+            {
+                TRI tri = new TRI();
+                tri.ShowDialog(this);
+                tri.Dispose();
+            }
+            if (GV.nou > 0)
+            {
+                OU ou = new OU();
+                ou.ShowDialog(this);
+                ou.Dispose();
+            }
             DialogResult res = MessageBox.Show("Выводить описание схемы в файл?", "Вывод в файл", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
