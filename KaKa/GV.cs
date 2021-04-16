@@ -28,7 +28,7 @@ namespace KaKa
         public static int[,] in_tri = new int[ntri + 1, 4];
         public static int[] z_tri = new int[ntri + 1];
 
-        public static int[,] in_ou = new int[nou + 1, 5];//TODO proper init
+        public static int[,] in_ou = new int[nou + 1, 4];
         public static int[,] z_ou = new int[nou + 1, 4];
 
 

@@ -31,14 +31,7 @@ namespace KaKa
                     break;
                 case 1:
                     GV.filename = m_file.Text;
-                    try
-                    {
-                        filein(GV.filename);
-                    }
-                    catch (Exception err)
-                    {
-                        throw new Exception(err.Message);
-                    }
+                    filein(GV.filename);
 
                     break;
             }
@@ -89,7 +82,7 @@ namespace KaKa
             }
             for (i = 1; i <= GV.nou; i++)
             {
-                str = GV.in_ou[i, 0].ToString() + " " + GV.in_ou[i, 1].ToString() + " " + GV.in_ou[i, 2].ToString() + " " + GV.in_ou[i, 3].ToString()
+                str = GV.in_ou[i, 1].ToString() + " " + GV.in_ou[i, 2].ToString() + " " + GV.in_ou[i, 3].ToString() + " " + GV.in_ou[i, 4].ToString()
                     + " " + GV.z_ou[i, 0].ToString() + " " + GV.z_ou[i, 1].ToString() + " " + GV.z_ou[i, 2].ToString() + " " + GV.z_ou[i, 3].ToString();
                 fout.WriteLine(str);
             }
@@ -173,10 +166,10 @@ namespace KaKa
             {
                 str = fin.ReadLine();
                 s = str.Split(sep, 8);
-                GV.in_ou[i, 0] = Int32.Parse(s[0]);
-                GV.in_ou[i, 1] = Int32.Parse(s[1]);
-                GV.in_ou[i, 2] = Int32.Parse(s[2]);
-                GV.in_ou[i, 3] = Int32.Parse(s[3]);
+                GV.in_ou[i, 1] = Int32.Parse(s[0]);
+                GV.in_ou[i, 2] = Int32.Parse(s[1]);
+                GV.in_ou[i, 3] = Int32.Parse(s[2]);
+                GV.in_ou[i, 4] = Int32.Parse(s[3]);
                 GV.z_ou[i, 0] = Int32.Parse(s[4]);
                 GV.z_ou[i, 1] = Int32.Parse(s[5]);
                 GV.z_ou[i, 2] = Int32.Parse(s[6]);

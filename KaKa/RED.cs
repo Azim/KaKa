@@ -20,8 +20,6 @@ namespace KaKa
 
         private void m_redlst_DoubleClick(object sender, EventArgs e)//TODO add other components
         {
-            String i1, i2, i3;//, i4, i5, i6, i7, i8, i9;
-            //Начальная установка
             m_np1.Show();
             m_nm1.Show();
             m_np2.Show();
@@ -59,12 +57,9 @@ namespace KaKa
                 case 0:
                 case 1:
                 case 2:
-                    i1 = "n+";
-                    i2 = "n-";
-                    i3 = "Значение";
-                    IDC_NP2_STATIC.Text = i1;
-                    IDC_NM2_STATIC.Text = i2;
-                    IDC_Z1_STATIC.Text = i3;
+                    IDC_NP2_STATIC.Text = "n+";
+                    IDC_NM2_STATIC.Text = "n-";
+                    IDC_Z1_STATIC.Text = "Значение";
                     m_np1.Hide();
                     m_nm1.Hide();
                     m_z2.Hide();

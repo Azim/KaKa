@@ -151,10 +151,11 @@ namespace KaKa
                     fout.WriteLine(str);
                 }
             }
-            //...
+            //TODO описание остальных компонентов
+
             str = "Результаты моделирования";
             fout.WriteLine(str);
-            if ((GV.lp == 1) && (GV.lm == 0) && (GV.kp == 2) && (GV.km == 0))
+            if ((GV.lp == 1) && (GV.lm == 0) && (GV.kp == 2) && (GV.km == 0)) //TODO better formatting
             {
                 str = " f кГц 	 kum 	 kua 	 rim 	 ria 	 rom 	 roa";
                 fout.WriteLine(str);
