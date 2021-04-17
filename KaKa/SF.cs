@@ -178,7 +178,7 @@ namespace KaKa
             if (GV.nei != 0)
             {
                 fout.WriteLine("ИНУТ");
-                fout.WriteLine("\t\tn1+\t\tn1-\t\tn2+\t\tn2-\t\tEI"); //todo единцы изменерия
+                fout.WriteLine("\t\tn1+\t\tn1-\t\tn2+\t\tn2-\t\tEI");
                 for (int i = 1; i <= GV.nei; i++)
                 {
                     fout.WriteLine("EI{0}\t\t{1}\t\t{2}\t\t{3}\t\t{4}\t\t{5}",

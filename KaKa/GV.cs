@@ -32,7 +32,6 @@ namespace KaKa
         public static float[,] z_ou = new float[nou + 1, 4];
 
 
-
         public static int[,] in_r = new int[MR + 1, 2];
         public static int[,] in_c = new int[MC + 1, 2];
         public static int[,] in_l = new int[ML + 1, 2];
