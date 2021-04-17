@@ -25,10 +25,14 @@ namespace KaKa
             GV.in_eu[i, 1] = Int32.Parse(m_nmeu1.Text);
             GV.in_eu[i, 2] = Int32.Parse(m_npeu2.Text);
             GV.in_eu[i, 3] = Int32.Parse(m_nmeu2.Text);
-
+            /*
             GV.z_eu[i, 0] = Int32.Parse(m_zy0.Text);
             GV.z_eu[i, 1] = Int32.Parse(m_zt1.Text);
             GV.z_eu[i, 2] = Int32.Parse(m_zt2.Text);
+            */
+            float.TryParse(m_zy0.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_eu[i, 0]);
+            float.TryParse(m_zt1.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_eu[i, 1]);
+            float.TryParse(m_zt2.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_eu[i, 2]);
 
             i++;
             m_nexteu.Text = i.ToString();

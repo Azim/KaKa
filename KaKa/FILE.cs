@@ -173,7 +173,7 @@ namespace KaKa
                 GV.z_ou[i, 0] = Int32.Parse(s[4]);
                 GV.z_ou[i, 1] = Int32.Parse(s[5]);
                 GV.z_ou[i, 2] = Int32.Parse(s[6]);
-                GV.z_ou[i, 2] = Int32.Parse(s[7]);
+                GV.z_ou[i, 3] = Int32.Parse(s[7]);
             }
 
             fin.Close();

@@ -26,7 +26,8 @@ namespace KaKa
             GV.in_ei[i, 1] = Int32.Parse(m_nmei1.Text);
             GV.in_ei[i, 2] = Int32.Parse(m_npei2.Text);
             GV.in_ei[i, 3] = Int32.Parse(m_nmei2.Text);
-            GV.z_ei[i] = Int32.Parse(m_zei.Text);       //TODO what is it called? 
+            //GV.z_ei[i] = Int32.Parse(m_zei.Text);
+            float.TryParse(m_zei.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_ei[i]);//TODO what is it called? 
 
             i++;
             m_nextei.Text = i.ToString();

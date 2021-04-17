@@ -26,8 +26,8 @@ namespace KaKa
             GV.in_tri[i, 1] = Int32.Parse(m_nm1.Text);
             GV.in_tri[i, 2] = Int32.Parse(m_np2.Text);
             GV.in_tri[i, 3] = Int32.Parse(m_nm2.Text);
-            GV.z_tri[i] = Int32.Parse(m_z.Text);       //TODO what is it called? 
-
+            //GV.z_tri[i] = Int32.Parse(m_z.Text);
+            float.TryParse(m_z.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_tri[i]);
             i++;
             m_nextei.Text = i.ToString();
             if (i <= GV.nr)

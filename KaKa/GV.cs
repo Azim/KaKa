@@ -20,16 +20,16 @@ namespace KaKa
         public static int neu, nei, ntri, nou, n;
 
         public static int[,] in_eu = new int[neu + 1, 4];
-        public static int[,] z_eu = new int[neu + 1, 3];
+        public static float[,] z_eu = new float[neu + 1, 3];
 
         public static int[,] in_ei = new int[nei + 1, 4];
-        public static int[] z_ei = new int[nei + 1];
+        public static float[] z_ei = new float[nei + 1];
 
         public static int[,] in_tri = new int[ntri + 1, 4];
-        public static int[] z_tri = new int[ntri + 1];
+        public static float[] z_tri = new float[ntri + 1];
 
         public static int[,] in_ou = new int[nou + 1, 4];
-        public static int[,] z_ou = new int[nou + 1, 4];
+        public static float[,] z_ou = new float[nou + 1, 4];
 
 
 

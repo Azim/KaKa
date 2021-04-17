@@ -168,10 +168,14 @@
             this.m_redlst.Items.AddRange(new object[] {
             "Резисторы",
             "Конденсаторы",
-            "Индуктивности"});
+            "Индуктивности",
+            "ИНУН",
+            "ИНУТ",
+            "Ид. трансформаторы",
+            "Опер. усилители"});
             this.m_redlst.Location = new System.Drawing.Point(12, 38);
             this.m_redlst.Name = "m_redlst";
-            this.m_redlst.Size = new System.Drawing.Size(111, 251);
+            this.m_redlst.Size = new System.Drawing.Size(126, 251);
             this.m_redlst.TabIndex = 23;
             this.m_redlst.DoubleClick += new System.EventHandler(this.m_redlst_DoubleClick);
             // 

@@ -49,7 +49,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.IDC_NEXTR_BUTTON.Location = new System.Drawing.Point(75, 180);
             this.IDC_NEXTR_BUTTON.Name = "IDC_NEXTR_BUTTON";
-            this.IDC_NEXTR_BUTTON.Size = new System.Drawing.Size(75, 23);
+            this.IDC_NEXTR_BUTTON.Size = new System.Drawing.Size(102, 23);
             this.IDC_NEXTR_BUTTON.TabIndex = 0;
             this.IDC_NEXTR_BUTTON.Text = "Следующий";
             this.IDC_NEXTR_BUTTON.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             // m_nextei
             // 
             this.m_nextei.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_nextei.Location = new System.Drawing.Point(150, 15);
+            this.m_nextei.Location = new System.Drawing.Point(177, 15);
             this.m_nextei.Name = "m_nextei";
             this.m_nextei.ReadOnly = true;
             this.m_nextei.Size = new System.Drawing.Size(75, 20);
@@ -86,7 +86,7 @@
             // m_np1
             // 
             this.m_np1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_np1.Location = new System.Drawing.Point(150, 41);
+            this.m_np1.Location = new System.Drawing.Point(177, 41);
             this.m_np1.Name = "m_np1";
             this.m_np1.Size = new System.Drawing.Size(75, 20);
             this.m_np1.TabIndex = 3;
@@ -101,11 +101,11 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Узел n1-";
             // 
-            // m_nmei1
+            // m_nm1
             // 
             this.m_nm1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_nm1.Location = new System.Drawing.Point(150, 67);
-            this.m_nm1.Name = "m_nmei1";
+            this.m_nm1.Location = new System.Drawing.Point(177, 67);
+            this.m_nm1.Name = "m_nm1";
             this.m_nm1.Size = new System.Drawing.Size(75, 20);
             this.m_nm1.TabIndex = 5;
             this.m_nm1.Text = "0";
@@ -115,15 +115,15 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(13, 148);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 13);
+            this.label4.Size = new System.Drawing.Size(160, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "хз что это, надо спросить";
+            this.label4.Text = "коэффициент трансформации";
             // 
-            // m_zei
+            // m_z
             // 
             this.m_z.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_z.Location = new System.Drawing.Point(150, 145);
-            this.m_z.Name = "m_zei";
+            this.m_z.Location = new System.Drawing.Point(177, 145);
+            this.m_z.Name = "m_z";
             this.m_z.Size = new System.Drawing.Size(75, 20);
             this.m_z.TabIndex = 7;
             this.m_z.Text = "0";
@@ -137,11 +137,11 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Узел n2-";
             // 
-            // m_nmei2
+            // m_nm2
             // 
             this.m_nm2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_nm2.Location = new System.Drawing.Point(150, 119);
-            this.m_nm2.Name = "m_nmei2";
+            this.m_nm2.Location = new System.Drawing.Point(177, 119);
+            this.m_nm2.Name = "m_nm2";
             this.m_nm2.Size = new System.Drawing.Size(75, 20);
             this.m_nm2.TabIndex = 11;
             this.m_nm2.Text = "0";
@@ -155,11 +155,11 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Узел n2+";
             // 
-            // m_npei2
+            // m_np2
             // 
             this.m_np2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_np2.Location = new System.Drawing.Point(150, 93);
-            this.m_np2.Name = "m_npei2";
+            this.m_np2.Location = new System.Drawing.Point(177, 93);
+            this.m_np2.Name = "m_np2";
             this.m_np2.Size = new System.Drawing.Size(75, 20);
             this.m_np2.TabIndex = 9;
             this.m_np2.Text = "0";
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(237, 215);
+            this.ClientSize = new System.Drawing.Size(264, 215);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.m_nm2);
             this.Controls.Add(this.label6);
@@ -182,7 +182,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.m_nextei);
             this.Controls.Add(this.IDC_NEXTR_BUTTON);
-            this.MaximumSize = new System.Drawing.Size(254, 400);
+            this.MaximumSize = new System.Drawing.Size(280, 400);
             this.Name = "TRI";
             this.Text = "TRI";
             this.ResumeLayout(false);

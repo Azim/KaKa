@@ -42,7 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.m_npeu2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.m_zr0 = new System.Windows.Forms.TextBox();
+            this.m_zro = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.m_zmu = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -177,16 +177,16 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(21, 13);
             this.label7.TabIndex = 14;
-            this.label7.Text = "R0";
+            this.label7.Text = "Ro";
             // 
             // m_zr0
             // 
-            this.m_zr0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_zr0.Location = new System.Drawing.Point(150, 171);
-            this.m_zr0.Name = "m_zr0";
-            this.m_zr0.Size = new System.Drawing.Size(75, 20);
-            this.m_zr0.TabIndex = 13;
-            this.m_zr0.Text = "0";
+            this.m_zro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.m_zro.Location = new System.Drawing.Point(150, 171);
+            this.m_zro.Name = "m_zr0";
+            this.m_zro.Size = new System.Drawing.Size(75, 20);
+            this.m_zro.TabIndex = 13;
+            this.m_zro.Text = "0";
             // 
             // label8
             // 
@@ -234,7 +234,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.m_zmu);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.m_zr0);
+            this.Controls.Add(this.m_zro);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.m_nmeu2);
             this.Controls.Add(this.label6);
@@ -272,7 +272,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox m_npeu2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox m_zr0;
+        private System.Windows.Forms.TextBox m_zro;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox m_zmu;
         private System.Windows.Forms.Label label9;
