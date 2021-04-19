@@ -161,7 +161,7 @@ namespace KaKa
                     for (int j = 1; j <= 4; j++)
                         y[i, j] = new Complex(0, 0);
                 for(int k = 0; k <= 1; k++)
-                    for (int l = 0; k <= 1; l++)
+                    for (int l = 0; l <= 1; l++)
                     {
                         int i = in_d[k, l];
                         for (int m = 0; m <= 1; m++)

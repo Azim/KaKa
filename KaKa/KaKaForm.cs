@@ -40,7 +40,7 @@ namespace KaKa
             GV.z_ei = new float[GV.nei + 1];
             GV.in_tri = new int[GV.ntri + 1, 4];
             GV.z_tri = new float[GV.ntri + 1];
-            GV.in_ou = new int[GV.nou + 1, 4];
+            GV.in_ou = new int[GV.nou + 1, 5];
             GV.z_ou = new float[GV.nou + 1, 4];
 
             if (GV.nr > 0)
