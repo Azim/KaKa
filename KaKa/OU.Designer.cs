@@ -36,17 +36,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.m_nmeu1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.m_zri = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.m_nmeu2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.m_npeu2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.m_zro = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.m_zmu = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.m_zft = new System.Windows.Forms.TextBox();
+            this.m_zri = new System.Windows.Forms.NumericUpDown();
+            this.m_zro = new System.Windows.Forms.NumericUpDown();
+            this.m_zmu = new System.Windows.Forms.NumericUpDown();
+            this.m_zft = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.m_zri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_zro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_zmu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_zft)).BeginInit();
             this.SuspendLayout();
             // 
             // IDC_NEXTR_BUTTON
@@ -55,7 +59,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.IDC_NEXTR_BUTTON.Location = new System.Drawing.Point(75, 252);
             this.IDC_NEXTR_BUTTON.Name = "IDC_NEXTR_BUTTON";
-            this.IDC_NEXTR_BUTTON.Size = new System.Drawing.Size(75, 23);
+            this.IDC_NEXTR_BUTTON.Size = new System.Drawing.Size(76, 23);
             this.IDC_NEXTR_BUTTON.TabIndex = 0;
             this.IDC_NEXTR_BUTTON.Text = "Следующий";
             this.IDC_NEXTR_BUTTON.UseVisualStyleBackColor = true;
@@ -64,10 +68,10 @@
             // m_nexteu
             // 
             this.m_nexteu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_nexteu.Location = new System.Drawing.Point(150, 15);
+            this.m_nexteu.Location = new System.Drawing.Point(107, 15);
             this.m_nexteu.Name = "m_nexteu";
             this.m_nexteu.ReadOnly = true;
-            this.m_nexteu.Size = new System.Drawing.Size(75, 20);
+            this.m_nexteu.Size = new System.Drawing.Size(119, 20);
             this.m_nexteu.TabIndex = 1;
             this.m_nexteu.Text = "1";
             // 
@@ -92,9 +96,9 @@
             // m_npeu1
             // 
             this.m_npeu1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_npeu1.Location = new System.Drawing.Point(150, 41);
+            this.m_npeu1.Location = new System.Drawing.Point(107, 41);
             this.m_npeu1.Name = "m_npeu1";
-            this.m_npeu1.Size = new System.Drawing.Size(75, 20);
+            this.m_npeu1.Size = new System.Drawing.Size(119, 20);
             this.m_npeu1.TabIndex = 3;
             this.m_npeu1.Text = "0";
             // 
@@ -110,9 +114,9 @@
             // m_nmeu1
             // 
             this.m_nmeu1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_nmeu1.Location = new System.Drawing.Point(150, 67);
+            this.m_nmeu1.Location = new System.Drawing.Point(107, 67);
             this.m_nmeu1.Name = "m_nmeu1";
-            this.m_nmeu1.Size = new System.Drawing.Size(75, 20);
+            this.m_nmeu1.Size = new System.Drawing.Size(119, 20);
             this.m_nmeu1.TabIndex = 5;
             this.m_nmeu1.Text = "0";
             // 
@@ -124,15 +128,6 @@
             this.label4.Size = new System.Drawing.Size(17, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Ri";
-            // 
-            // m_zri
-            // 
-            this.m_zri.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_zri.Location = new System.Drawing.Point(150, 145);
-            this.m_zri.Name = "m_zri";
-            this.m_zri.Size = new System.Drawing.Size(75, 20);
-            this.m_zri.TabIndex = 7;
-            this.m_zri.Text = "0";
             // 
             // label5
             // 
@@ -146,9 +141,9 @@
             // m_nmeu2
             // 
             this.m_nmeu2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_nmeu2.Location = new System.Drawing.Point(150, 119);
+            this.m_nmeu2.Location = new System.Drawing.Point(107, 119);
             this.m_nmeu2.Name = "m_nmeu2";
-            this.m_nmeu2.Size = new System.Drawing.Size(75, 20);
+            this.m_nmeu2.Size = new System.Drawing.Size(119, 20);
             this.m_nmeu2.TabIndex = 11;
             this.m_nmeu2.Text = "0";
             // 
@@ -164,9 +159,9 @@
             // m_npeu2
             // 
             this.m_npeu2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_npeu2.Location = new System.Drawing.Point(150, 93);
+            this.m_npeu2.Location = new System.Drawing.Point(107, 93);
             this.m_npeu2.Name = "m_npeu2";
-            this.m_npeu2.Size = new System.Drawing.Size(75, 20);
+            this.m_npeu2.Size = new System.Drawing.Size(119, 20);
             this.m_npeu2.TabIndex = 9;
             this.m_npeu2.Text = "0";
             // 
@@ -179,15 +174,6 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Ro";
             // 
-            // m_zr0
-            // 
-            this.m_zro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_zro.Location = new System.Drawing.Point(150, 171);
-            this.m_zro.Name = "m_zr0";
-            this.m_zro.Size = new System.Drawing.Size(75, 20);
-            this.m_zro.TabIndex = 13;
-            this.m_zro.Text = "0";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -196,15 +182,6 @@
             this.label8.Size = new System.Drawing.Size(13, 13);
             this.label8.TabIndex = 16;
             this.label8.Text = "μ";
-            // 
-            // m_zmu
-            // 
-            this.m_zmu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_zmu.Location = new System.Drawing.Point(150, 197);
-            this.m_zmu.Name = "m_zmu";
-            this.m_zmu.Size = new System.Drawing.Size(75, 20);
-            this.m_zmu.TabIndex = 15;
-            this.m_zmu.Text = "0";
             // 
             // label9
             // 
@@ -215,32 +192,95 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "ft";
             // 
+            // m_zri
+            // 
+            this.m_zri.DecimalPlaces = 9;
+            this.m_zri.Location = new System.Drawing.Point(107, 145);
+            this.m_zri.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.m_zri.Minimum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            -2147483648});
+            this.m_zri.Name = "m_zri";
+            this.m_zri.Size = new System.Drawing.Size(119, 20);
+            this.m_zri.TabIndex = 19;
+            // 
+            // m_zro
+            // 
+            this.m_zro.DecimalPlaces = 9;
+            this.m_zro.Location = new System.Drawing.Point(107, 171);
+            this.m_zro.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.m_zro.Minimum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            -2147483648});
+            this.m_zro.Name = "m_zro";
+            this.m_zro.Size = new System.Drawing.Size(119, 20);
+            this.m_zro.TabIndex = 20;
+            // 
+            // m_zmu
+            // 
+            this.m_zmu.DecimalPlaces = 9;
+            this.m_zmu.Location = new System.Drawing.Point(107, 197);
+            this.m_zmu.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.m_zmu.Minimum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            -2147483648});
+            this.m_zmu.Name = "m_zmu";
+            this.m_zmu.Size = new System.Drawing.Size(119, 20);
+            this.m_zmu.TabIndex = 21;
+            // 
             // m_zft
             // 
-            this.m_zft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_zft.Location = new System.Drawing.Point(150, 223);
+            this.m_zft.DecimalPlaces = 9;
+            this.m_zft.Location = new System.Drawing.Point(107, 223);
+            this.m_zft.Maximum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.m_zft.Minimum = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            -2147483648});
             this.m_zft.Name = "m_zft";
-            this.m_zft.Size = new System.Drawing.Size(75, 20);
-            this.m_zft.TabIndex = 17;
-            this.m_zft.Text = "0";
+            this.m_zft.Size = new System.Drawing.Size(119, 20);
+            this.m_zft.TabIndex = 22;
             // 
             // OU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(237, 287);
-            this.Controls.Add(this.label9);
+            this.ClientSize = new System.Drawing.Size(238, 287);
             this.Controls.Add(this.m_zft);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.m_zmu);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.m_zro);
+            this.Controls.Add(this.m_zri);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.m_nmeu2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.m_npeu2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.m_zri);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.m_nmeu1);
             this.Controls.Add(this.label2);
@@ -248,9 +288,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.m_nexteu);
             this.Controls.Add(this.IDC_NEXTR_BUTTON);
-            this.MaximumSize = new System.Drawing.Size(254, 400);
+            this.MaximumSize = new System.Drawing.Size(400, 400);
             this.Name = "OU";
             this.Text = "EU";
+            ((System.ComponentModel.ISupportInitialize)(this.m_zri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_zro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_zmu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_zft)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,16 +310,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox m_nmeu1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox m_zri;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox m_nmeu2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox m_npeu2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox m_zro;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox m_zmu;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox m_zft;
+        private System.Windows.Forms.NumericUpDown m_zri;
+        private System.Windows.Forms.NumericUpDown m_zro;
+        private System.Windows.Forms.NumericUpDown m_zmu;
+        private System.Windows.Forms.NumericUpDown m_zft;
     }
 }

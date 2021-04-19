@@ -19,26 +19,26 @@ namespace KaKa
         //confusing part
         public static int neu, nei, ntri, nou, n;
 
-        public static int[,] in_eu = new int[neu + 1, 4];
-        public static float[,] z_eu = new float[neu + 1, 3];
+        public static int[,] in_eu;//  = new int[neu + 1, 4];
+        public static float[,] z_eu;//  = new float[neu + 1, 3];
 
-        public static int[,] in_ei = new int[nei + 1, 4];
-        public static float[] z_ei = new float[nei + 1];
+        public static int[,] in_ei;//  = new int[nei + 1, 4];
+        public static float[] z_ei;//  = new float[nei + 1];
 
-        public static int[,] in_tri = new int[ntri + 1, 4];
-        public static float[] z_tri = new float[ntri + 1];
+        public static int[,] in_tri;//  = new int[ntri + 1, 4];
+        public static float[] z_tri;//  = new float[ntri + 1];
 
-        public static int[,] in_ou = new int[nou + 1, 4];
-        public static float[,] z_ou = new float[nou + 1, 4];
+        public static int[,] in_ou;//  = new int[nou + 1, 4];
+        public static float[,] z_ou;// = new float[nou + 1, 4];
 
 
-        public static int[,] in_r = new int[MR + 1, 2];
-        public static int[,] in_c = new int[MC + 1, 2];
-        public static int[,] in_l = new int[ML + 1, 2];
+        public static int[,] in_r = new int[nr + 1, 2];
+        public static int[,] in_c = new int[nv + 1, 2];
+        public static int[,] in_l = new int[nl + 1, 2];
 
-        public static float[] z_r = new float[MR + 1];
-        public static float[] z_c = new float[MC + 1];
-        public static float[] z_l = new float[ML + 1];
+        public static float[] z_r = new float[nr + 1];
+        public static float[] z_c = new float[nc + 1];
+        public static float[] z_l = new float[nl + 1];
 
         public static float[] f = new float[MF + 1];
         public static int nf;

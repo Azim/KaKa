@@ -30,7 +30,7 @@ namespace KaKa
             float.TryParse(m_z.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_tri[i]);
             i++;
             m_nextei.Text = i.ToString();
-            if (i <= GV.nr)
+            if (i <= GV.ntri)
             {
                 m_np1.Text = "0";
                 m_nm1.Text = "0";

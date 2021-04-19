@@ -36,7 +36,7 @@ namespace KaKa
 
             i++;
             m_nexteu.Text = i.ToString();
-            if (i <= GV.nr)
+            if (i <= GV.neu)
             {
                 m_npeu1.Text = "0";
                 m_nmeu1.Text = "0";

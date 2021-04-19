@@ -27,6 +27,22 @@ namespace KaKa
             SIZE size = new SIZE();
             size.ShowDialog(this);
             size.Dispose();
+            GV.in_r = new int[GV.nr + 1, 2];
+            GV.in_c = new int[GV.nc + 1, 2];
+            GV.in_l = new int[GV.nl + 1, 2];
+            GV.z_r = new float[GV.nr + 1];
+            GV.z_c = new float[GV.nc + 1];
+            GV.z_l = new float[GV.nl + 1];
+
+            GV.in_eu = new int[GV.neu + 1, 4];
+            GV.z_eu = new float[GV.neu + 1, 3];
+            GV.in_ei = new int[GV.nei + 1, 4];
+            GV.z_ei = new float[GV.nei + 1];
+            GV.in_tri = new int[GV.ntri + 1, 4];
+            GV.z_tri = new float[GV.ntri + 1];
+            GV.in_ou = new int[GV.nou + 1, 4];
+            GV.z_ou = new float[GV.nou + 1, 4];
+
             if (GV.nr > 0)
             {
                 R ir = new R();
@@ -193,12 +209,11 @@ namespace KaKa
             textBox1.AppendText(str + "\r\n");
             if ((GV.lp == 1) && (GV.lm == 0) && (GV.kp == 2) && (GV.km == 0))
             {
-                str = "    f кГц \t kum \t kua \t rim \t ria \t rom \t roa";
+                str = String.Format("{0,-12}{1,-12}{2,-12}{3,-12}{4,-12}{5,-12}{6,-12}", "f кГц", "kum", "kua", "rim", "ria", "rom", "roa");
                 textBox1.AppendText(str + "\r\n");
                 for (int kf = 1; kf <= GV.nf; kf++)
                 {
-                    str = String.Format("{0,12:F2}{1,12:E2}{2,12:F2}" +
-                    "{3,12:E2}{4,12:F2}{5,12:E2}{6,12:F2}",
+                    str = String.Format("{0,-12:F2}{1,-12:E2}{2,-12:F2}{3,-12:E2}{4,-12:F2}{5,-12:E2}{6,-12:F2}",
                     GV.f[kf], GV.kum[kf], GV.kua[kf], GV.rim[kf],
                     GV.ria[kf], GV.rom[kf], GV.roa[kf]);
                     textBox1.AppendText(str + "\r\n");
@@ -206,12 +221,11 @@ namespace KaKa
             }
             else
             {
-                str = "    f кГц \t kum \t kua \t rim \t ria";
+                str = String.Format("{0,-12}{1,-12}{2,-12}{3,-12}{4,-12}", "f кГц", "kum", "kua", "rim", "ria");
                 textBox1.AppendText(str + "\r\n");
                 for (int kf = 1; kf <= GV.nf; kf++)
                 {
-                    str = String.Format("{0,12:F2}{1,12:E2}{2,12:F2}" +
-                    "{3,12:E2}{4,12:F2}",
+                    str = String.Format("{0,-12:F2}{1,-12:E2}{2,-12:F2}{3,-12:E2}{4,-12:F2}",
                     GV.f[kf], GV.kum[kf], GV.kua[kf], GV.rim[kf], GV.ria[kf]);
                     textBox1.AppendText(str + "\r\n");
                 }

@@ -83,14 +83,14 @@
             // ID_CONS
             // 
             this.ID_CONS.Name = "ID_CONS";
-            this.ID_CONS.Size = new System.Drawing.Size(180, 22);
+            this.ID_CONS.Size = new System.Drawing.Size(177, 22);
             this.ID_CONS.Text = "Ввод с клавиатуры";
             this.ID_CONS.Click += new System.EventHandler(this.ID_CONS_Click);
             // 
             // ID_FILE
             // 
             this.ID_FILE.Name = "ID_FILE";
-            this.ID_FILE.Size = new System.Drawing.Size(180, 22);
+            this.ID_FILE.Size = new System.Drawing.Size(177, 22);
             this.ID_FILE.Text = "Ввод из файла";
             this.ID_FILE.Click += new System.EventHandler(this.ID_FILE_Click);
             // 
@@ -170,6 +170,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(13, 27);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";

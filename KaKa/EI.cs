@@ -31,7 +31,7 @@ namespace KaKa
 
             i++;
             m_nextei.Text = i.ToString();
-            if (i <= GV.nr)
+            if (i <= GV.nei)
             {
                 m_npei1.Text = "0";
                 m_nmei1.Text = "0";

@@ -31,23 +31,24 @@ namespace KaKa
             GV.z_eu[i, 2] = Int32.Parse(m_zmu.Text);
             GV.z_eu[i, 3] = Int32.Parse(m_zft.Text);
             */
-            float.TryParse(m_zri.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_ou[i, 0]);
-            float.TryParse(m_zro.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_ou[i, 1]);
-            float.TryParse(m_zmu.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_ou[i, 2]);
-            float.TryParse(m_zft.Text.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out GV.z_ou[i, 3]);
-
+            float t = Convert.ToSingle(m_zri.Value);  //this one
+            GV.z_ou[i, 0] = t;
+            GV.z_ou[i, 1] = (float)m_zro.Value;
+            GV.z_ou[i, 2] = (float)m_zmu.Value;
+            GV.z_ou[i, 3] = (float)m_zft.Value;
+            
             i++;
             m_nexteu.Text = i.ToString();
-            if (i <= GV.nr)
+            if (i <= GV.nou)
             {
                 m_npeu1.Text = "0";
                 m_nmeu1.Text = "0";
                 m_npeu2.Text = "0";
                 m_nmeu2.Text = "0";
-                m_zri.Text = "0";
-                m_zro.Text = "0";
-                m_zmu.Text = "0";
-                m_zft.Text = "0";
+                m_zri.Value = 0;
+                m_zro.Value = 0;
+                m_zmu.Value = 0;
+                m_zft.Value = 0;
                 m_npeu1.Focus();
             }
             else
