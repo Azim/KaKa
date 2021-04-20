@@ -122,6 +122,7 @@ namespace KaKa
             catch (Exception err)
             {
                 MessageBox.Show(err.Message);
+                
                 return;
             }
             file.Dispose();
@@ -131,6 +132,7 @@ namespace KaKa
             IO io = new IO();
             io.ShowDialog(this);
             io.Dispose();
+            ID_CALC_Click(null, null);
         }
 
         private void ID_F_Click(object sender, EventArgs e)

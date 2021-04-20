@@ -106,6 +106,22 @@ namespace KaKa
             GV.ntri = Int32.Parse(s[6]);
             GV.nou = Int32.Parse(s[7]);
 
+            GV.in_r = new int[GV.nr + 1, 2];
+            GV.in_c = new int[GV.nc + 1, 2];
+            GV.in_l = new int[GV.nl + 1, 2];
+            GV.z_r = new float[GV.nr + 1];
+            GV.z_c = new float[GV.nc + 1];
+            GV.z_l = new float[GV.nl + 1];
+
+            GV.in_eu = new int[GV.neu + 1, 4];
+            GV.z_eu = new float[GV.neu + 1, 3];
+            GV.in_ei = new int[GV.nei + 1, 4];
+            GV.z_ei = new float[GV.nei + 1];
+            GV.in_tri = new int[GV.ntri + 1, 4];
+            GV.z_tri = new float[GV.ntri + 1];
+            GV.in_ou = new int[GV.nou + 1, 5];
+            GV.z_ou = new float[GV.nou + 1, 4];
+
             for (int i = 1; i <= GV.nr; i++)
             {
                 str = fin.ReadLine();

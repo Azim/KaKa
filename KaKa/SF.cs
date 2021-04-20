@@ -209,19 +209,19 @@ namespace KaKa
             fout.WriteLine("Результаты моделирования");
             if ((GV.lp == 1) && (GV.lm == 0) && (GV.kp == 2) && (GV.km == 0))
             {
-                fout.WriteLine("f\t\tкГц\t\tkum\t\tkua\t\trim\t\tria\t\trom\t\troa");
+                fout.WriteLine("{0,-12}{1,-12}{2,-12}{3,-12}{4,-12}{5,-12}{6,-12}", "f кГц", "kum", "kua", "rim", "ria", "rom", "roa");
                 for (int kf = 1; kf <= GV.nf; kf++)
                 {
-                    fout.WriteLine("{0}\t\t{1}\t\t{2}\t\t{3}\t\t{4}\t\t{5}\t\t{6}",
+                    fout.WriteLine("{0,-12:F2}{1,-12:E2}{2,-12:F2}{3,-12:E2}{4,-12:F2}{5,-12:E2}{6,-12:F2}",
                     GV.f[kf], GV.kum[kf], GV.kua[kf], GV.rim[kf], GV.ria[kf], GV.rom[kf], GV.roa[kf]);
                 }
             }
             else
             {
-                fout.WriteLine("f\t\tкГц\t\tkum\t\tkua\t\trim\t\tria");
+                fout.WriteLine("{0,-12}{1,-12}{2,-12}{3,-12}{4,-12}", "f кГц", "kum", "kua", "rim", "ria");
                 for (int kf = 1; kf <= GV.nf; kf++)
                 {
-                    fout.WriteLine("{0}\t\t{1}\t\t{2}\t\t{3}\t\t{4}",
+                    fout.WriteLine("{0,-12:F2}{1,-12:E2}{2,-12:F2}{3,-12:E2}{4,-12:F2}",
                     GV.f[kf], GV.kum[kf], GV.kua[kf], GV.rim[kf], GV.ria[kf]);
                 }
             }
